@@ -1,0 +1,32 @@
+{
+  "name": "houseofgroove",
+  "version": "0.0.1",
+  "description": "DJ Professional Angular App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macikokoro/houseofgroovedj.git"
+  },
+  "keywords": [
+    "angular",
+    "dj",
+    "scroll",
+    "one",
+    "page"
+  ],
+  "author": "JQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macikokoro/houseofgroovedj/issues"
+  },
+  "homepage": "https://github.com/macikokoro/houseofgroovedj",
+  "dependencies": {
+    "express": "^4.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
+  }
+}
