@@ -3,12 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-/*Color scheme
-AA1111 RED
-FFFFFF WHITE
-EBEBEB GRAY
-000000 BLACK
-*/
+
 body {
     width: 100%;
     height: 100%;
@@ -22,7 +17,6 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -33,41 +27,150 @@ html {
     }
 }
 
-.brand-heading {
-  font-size: 80px;
-}
-
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
-
 .intro-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
-    background: #454545;
-    color: red;
+    background: #000;
+    color: #fff;
+}
+
+.intro-section h1 {
+  font-family: 'BN Expoo', sans-serif;
+  font-size: 9em;
+  line-height: 1em;
+  color: black;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke: 2px red;
+}
+
+.intro-section p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.intro-section:before, .container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro-section:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
 }
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: left;
+    text-align: center;
     background: #eee;
-    diplay: table-cell;
-    vertical-align: middle;
+}
+
+.about-section h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  color: black;
+  text-align: left;
+}
+
+.about-section p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.about-section img {
+  width: 100%;
+  padding-top: 8em;
+  padding-left: 2em;
+}
+
+.about-section:before, .container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about-section:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
 }
 
 .services-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
+.services-section h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  color: black;
+}
+
+.services-section p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.services-section:before, .container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.services-section:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
+}
+
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+  height: 100%;
+  background: #eee;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  color: black;
+}
+
+.contact-section label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.contact-section button {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.contact-section:before, .container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact-section:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
 }
