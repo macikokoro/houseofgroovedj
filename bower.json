@@ -1,0 +1,30 @@
+{
+  "name": "houseofgroove",
+  "version": "0.0.1",
+  "homepage": "https://github.com/macikokoro/houseofgroovedj",
+  "authors": [
+    "JQ"
+  ],
+  "description": "house of groove dj official page",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "dj",
+    "houseofgroove",
+    "node",
+    "mongodb",
+    "mongolab",
+    "heroku"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
