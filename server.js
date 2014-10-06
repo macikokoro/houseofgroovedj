@@ -5,10 +5,12 @@ var http = require('http');
 
 var app = express();
 
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/build'));
 
 var server = http.createServer(app);
 
-server.listen(3000, function() {
-  console.log('server running on port 3000');
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port, function() {
+    console.log('Hello from localhost: %d', server.address().port);
 });
