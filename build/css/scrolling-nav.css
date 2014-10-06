@@ -1,3 +1,12 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family:"BN Expoo";
+  src:url("../fonts/BN_Expoo/bnexpoo.eot?") format("eot"),
+  url("../fonts/BN_Expoo/bnexpoo.woff") format("woff"),
+  url("../fonts/BN_Expoo/bnexpoo.ttf") format("truetype"),
+  url("../fonts/BN_Expoo/bnexpoo.svg#BNExpoo") format("svg");
+  font-weight:normal;font-style:normal;}
+
 /*!
  * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
