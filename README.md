@@ -7,3 +7,5 @@ Angular app with a D3 flavor
 - Clone repo.
 - npm install
 - grunt build:dev
+
+Heroku link: [http://houseofgroove.herokuapp.com/] (http://houseofgroove.herokuapp.com/)
