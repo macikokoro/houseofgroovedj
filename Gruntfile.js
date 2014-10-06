@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       dev: {
         expand: true,
         cwd: 'app/',
-        src: ['*.html', 'css/*.css', 'img/*.jpg', 'fonts/*.eot', 'fonts/*.svg', 'fonts/*.ttf', 'fonts/*.woff'],
+        src: ['*.html', 'css/*.css', 'img/*.jpg', 'fonts/**/*.eot', 'fonts/**/*.svg', 'fonts/**/*.ttf', 'fonts/**/*.woff'],
         dest: 'build/',
         filter: 'isFile'
       }
