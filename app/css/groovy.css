@@ -22,14 +22,13 @@ html {
     height: 100%;
 }
 
-.navbar {
-font-family: 'Rajdhani', sans-serif;
-}
-
-
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
+        border-bottom: 0;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.4em;
+        letter-spacing: 1px;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -40,14 +39,25 @@ font-family: 'Rajdhani', sans-serif;
     }
 }
 
+.logo-top {
+  font-size: 1.4em;
+}
 .intro-section {
+    display: table;
+    width: 100%;
     height: 100%;
+    padding: 100px 0;
     text-align: center;
-    background: #000;
     color: #fff;
+    background-color: #000;
 }
 
-.intro-section h1 {
+.intro-section .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro-section .intro-body .brand-heading {
   font-family: 'BN Expoo', sans-serif;
   font-size: 9em;
   line-height: 1em;
@@ -56,24 +66,10 @@ font-family: 'Rajdhani', sans-serif;
   -webkit-text-stroke: 2px red;
 }
 
-.intro-section p {
+.intro-section .intro-body .intro-text {
   font-family: 'Rajdhani', sans-serif;
   font-size: 30px;
   line-height: 60px;
-}
-
-.intro-section:before, .container {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.intro-section:before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
-  margin-left: -0.25em;
 }
 
 .btn-circle {
@@ -116,6 +112,7 @@ font-family: 'Rajdhani', sans-serif;
     -moz-animation-timing-function: linear;
 }
 
+/* Button Animation */
 @-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
@@ -149,11 +146,20 @@ font-family: 'Rajdhani', sans-serif;
         transform: scale(1);
     }
 }
+/*****************************/
 
 .about-section {
-    height: 100%;
-    text-align: center;
-    background: #eee;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background: #eee;
+}
+
+.about-section .about-body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .about-section h1 {
@@ -177,24 +183,19 @@ font-family: 'Rajdhani', sans-serif;
   padding-left: 2em;
 }
 
-.about-section:before, .container {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.about-section:before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
-  margin-left: -0.25em;
-}
 
 .services-section {
-    height: 100%;
-    text-align: center;
-    background: #fff;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.services-section .services-body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .services-section h1 {
@@ -210,24 +211,18 @@ font-family: 'Rajdhani', sans-serif;
   line-height: 2em;
 }
 
-.services-section:before, .container {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.services-section:before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
-  margin-left: -0.25em;
-}
-
 .contact-section {
+  display: table;
+  width: 100%;
   height: 100%;
+  padding: 100px 0;
   background: #eee;
   text-align: center;
+}
+
+.contact-section .contact-body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .contact-section h1 {
@@ -241,19 +236,6 @@ font-family: 'Rajdhani', sans-serif;
   font-family: 'Rajdhani', sans-serif;
   font-size: 30px;
   line-height: 60px;
-}
-
-.contact-section:before, .container {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.contact-section:before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
 }
 
 .floating-label-form-group {
