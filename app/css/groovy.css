@@ -13,22 +13,22 @@
  */
 
 body {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 html {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
         border-bottom: 0;
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.4em;
         letter-spacing: 1px;
+        padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -43,13 +43,13 @@ html {
   font-size: 1.4em;
 }
 .intro-section {
+    background-color: #000;
+    color: #fff;
     display: table;
-    width: 100%;
     height: 100%;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background-color: #000;
+    width: 100%;
 }
 
 .intro-section .intro-body {
@@ -58,47 +58,54 @@ html {
 }
 
 .intro-section .intro-body .brand-heading {
-  font-family: 'BN Expoo', sans-serif;
-  font-size: 9em;
-  line-height: 1em;
   color: black;
   -webkit-text-fill-color: black;
   -webkit-text-stroke: 2px red;
+  font-family: 'BN Expoo', sans-serif;
+  font-size: 9em;
+  line-height: 1em;
 }
 
 .intro-section .intro-body .intro-text {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 60px;
 }
 
+.img-responsive {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .btn-circle {
-    width: 70px;
+    background: 0 0;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 40px;
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    width: 70px;
 }
 
 .btn-circle:hover,
 .btn-circle:focus {
-    outline: 0;
-    color: #fff;
     background: rgba(255,255,255,.1);
+    color: #fff;
+    outline: 0;
 }
 
 .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
+    -webkit-transition-property: -webkit-transform;
     -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
 }
 
 .btn-circle:hover i.animated {
