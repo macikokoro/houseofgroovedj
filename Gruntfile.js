@@ -21,13 +21,6 @@ module.exports = function(grunt) {
         filter: 'isFile'
       }
     },
-    sass: {
-        dev: {
-            files: {
-                'app/styles.css': 'app/sass/styles.scss'
-            }
-        }
-    },
     browserify: {
       dev: {
         options: {
@@ -39,5 +32,5 @@ module.exports = function(grunt) {
       }
     }
   });
-  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev', 'sass:dev']);
+  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev']);
 };
