@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.initConfig({
     clean: {
       dev: {
@@ -20,6 +21,13 @@ module.exports = function(grunt) {
         filter: 'isFile'
       }
     },
+    sass: {
+      dev: {
+        files: {
+          'app/styles.css': 'app/sass/styles.scss'
+        }
+      }
+    },
     browserify: {
       dev: {
         options: {
@@ -31,5 +39,5 @@ module.exports = function(grunt) {
       }
     }
   });
-  grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev']);
+  grunt.registerTask('build:dev', ['clean:dev', 'sass:dev', 'browserify:dev', 'copy:dev']);
 };
