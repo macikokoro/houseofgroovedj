@@ -1,13 +1,17 @@
 # House of Groove DJ
 
-Angular bootStrap app
+## Sass
 
-## Usage
+### Setup
 
-- Clone repo.
-- npm install
-- grunt build:dev
+<b>Install Sass</b>
 
-Heroku link: [http://houseofgroove.herokuapp.com/](http://houseofgroove.herokuapp.com/)
+```gem install sass```
+
+```npm install node-sass```
+
+```npm install grunt-contrib-sass```
+
+Add Sass to Gruntfile.js
 
 MIT License
