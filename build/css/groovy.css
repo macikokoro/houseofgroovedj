@@ -22,6 +22,7 @@ html {
     width: 100%;
 }
 
+
 @media(min-width:767px) {
     .navbar {
         border-bottom: 0;
@@ -42,6 +43,7 @@ html {
 .logo-top {
   font-size: 1.4em;
 }
+
 .intro-section {
     display: table;
     width: 100%;
@@ -63,19 +65,22 @@ html {
 }
 
 .intro-section .intro-body .brand-heading {
-  color: black;
   -webkit-text-fill-color: black;
   -webkit-text-stroke: 2px red;
   font-family: 'BN Expoo', sans-serif;
   font-size: 9em;
   line-height: 1em;
+  color: black;
 }
 
 .intro-section .intro-body .intro-text {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 60px;
+  color: red;
 }
+
 
 .img-responsive {
   margin: 0 auto;
@@ -86,9 +91,9 @@ html {
 
 .btn-circle {
     background: 0 0;
-    border: 2px solid #fff;
+    border: 2px solid red;
     border-radius: 35px;
-    color: #fff;
+    color: red;
     font-size: 40px;
     height: 70px;
     margin-top: 15px;
@@ -102,7 +107,7 @@ html {
 .btn-circle:hover,
 .btn-circle:focus {
     background: rgba(255,255,255,.1);
-    color: #fff;
+    color: red;
     outline: 0;
 }
 
@@ -122,6 +127,24 @@ html {
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
+}
+
+@media(min-width:600px) {
+  .description {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .btn-circle {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .btn-circle:hover {
+    color: #fff;
+  }
+
 }
 
 /* Button Animation */
