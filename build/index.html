@@ -62,6 +62,9 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -131,7 +134,86 @@
       </div>
     </section>
 
-   <!-- Contact Section -->
+    <!-- Testimonials Section -->
+    <header id="testimonials" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonials" data-slide-to="1"></li>
+            <li data-target="#testimonials" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="carousel-content" >
+                  <div class="carousel-body">
+                    <p>
+                      Our special day couldn't have been more perfect thanks to Ludwig and Serg!
+                      We knew we had made the right decision to hire House of Groove Entertainment
+                      from the very first moment. DJ Luda met us several times before the big day to
+                      discuss all the details and get to know our likes and dislikes. He always listened
+                      to our dreams with his utmost attention and was just as excited as we were to make our wedding unforgettable.
+                    </p>
+                  </div>
+                </div>
+              <div class="fill" style="background-image:url('img/placeholder.png');"></div>
+              <div class="carousel-caption">
+                <h1>Kristina and Laszlo</h1>
+                <h2>March 2012</h2>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-content">
+                <div class="carousel-body">
+                  <p>
+                    On May 19 my husband Steve and I hosted a party for our daughter and her friend.
+                    It was a combined birthday and graduation party. We had good food and great friends
+                    over to celebrate. But, what made it the party of all parties was DJ Ludwig.
+                    We must have danced from 6pm until 10:30pm and we have the pictures to prove it.
+                  </p>
+                </div>
+              </div>
+              <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/placeholder.png');"></div>
+                <div class="carousel-caption">
+                  <h1>Steve and Liz Rael</h1>
+                  <h2>May 2012</h2>
+                </div>
+            </div>
+            <div class="item">
+              <div class="carousel-content">
+                <div class="carousel-body">
+                  <p>
+                    We were fortunate to have both Luda and Serg as our DJ in our Wedding Party in August 2011.
+                    They both were very professional, punctual, friendly and helpful! The DJ booth was set up just perfect,
+                    gave easy access to them so if we had any requests we could talk to them. They listened to all of our
+                    requests and did the best job fulfilling them. They played the best songs to keep the party going.
+                    I would highly recommend them to everybody who's about to have any kind of party and want professionalism,
+                    DJ's with great personalities and a FUN night!!
+                  </p>
+                </div>
+              </div>
+                <!-- Set the third background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/placeholder.png');"></div>
+              <div class="carousel-caption">
+                <h1>Wes and Victoria</h1>
+                <h2>August 2011</h2>
+              </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="contact-body">
         <div class="container">
@@ -198,9 +280,15 @@
 
     <!-- D3 -->
     <script src="js/d3.js"></script>
-    <!-- Original: http://vyacheslavryabinin.com/datavis/absind/ -->
 
-        <!-- Contact Form JavaScript -->
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+    <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact-me.js"></script>
 

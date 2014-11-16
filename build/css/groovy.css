@@ -215,7 +215,6 @@ html {
 .about-section img {
   width: 100%;
   padding-top: 8em;
-  padding-left: 2em;
 }
 
 
@@ -246,12 +245,67 @@ html {
   line-height: 2em;
 }
 
+.carousel,
+.item,
+.active {
+  height: 100%;
+  margin-bottom: 0px;
+  background: #bebebe;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel h1 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.carousel h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.carousel p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2em;
+  line-height: 2em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-content {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: justify;
+}
+
+.carousel-body {
+  display: table-cell;
+  padding: 0 20%;
+  vertical-align: middle;
+}
+
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .contact-section {
   display: table;
   width: 100%;
   height: 100%;
   padding: 100px 0;
-  background: #eee;
+  background: #fff;
   text-align: center;
 }
 
@@ -277,7 +331,7 @@ html {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #eee;
     font-family: 'Rajdhani', sans-serif;
 }
 
